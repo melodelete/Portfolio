@@ -323,6 +323,7 @@
             gap: 10px;
         }
         .skill { 
+            position: relative;
             min-height: 112px;
             display: flex;
             flex-direction: column;
@@ -336,6 +337,17 @@
         .skill:hover { 
             transform: translateY(-3px);
             border-color: var(--accent);
+        }
+        .skill-head { 
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .skill-logo {
+            width: 38px;
+            height: 38px;
+            object-fit: contain;
         }
         .skill-index {
             color: var(--muted);
@@ -547,14 +559,14 @@
                     <p class="section-note">A growing toolkit across Programming, Desktop Apps, and Game Engines.</p>
                 </div>
                 <div class="skills-grid">
-                    <article class="skill"><span class="skill-index">01</span><span class="skill-name">Rust</span><span class="skill-type">Programming Language</span></article>
-                    <article class="skill"><span class="skill-index">02</span><span class="skill-name">Python</span><span class="skill-type">Programming Language</span></article>
-                    <article class="skill"><span class="skill-index">03</span><span class="skill-name">HTML</span><span class="skill-type">Web</span></article>
-                    <article class="skill"><span class="skill-index">04</span><span class="skill-name">Electron</span><span class="skill-type">Desktop Apps</span></article>
-                    <article class="skill"><span class="skill-index">05</span><span class="skill-name">CSS</span><span class="skill-type">Web Styling</span></article>
-                    <article class="skill"><span class="skill-index">06</span><span class="skill-name">JavaScript</span><span class="skill-type">Programming Language</span></article>
-                    <article class="skill"><span class="skill-index">07</span><span class="skill-name">Shell</span><span class="skill-type">Command Line</span></article>
-                    <article class="skill"><span class="skill-index">08</span><span class="skill-name">Godot</span><span class="skill-type">Game Engine</span></article>
+                    <article class="skill"><span class="skill-index">01</span><img class="skill-log" src="assets/ico/rust-original.svg" alt="" aria-hidden="true"><span class="skill-name">Rust</span><span class="skill-type">Programming Language</span></article>
+                    <article class="skill"><span class="skill-index">02</span><img class="skill-log" src="assets/ico/python-original.svg" alt="" aria-hidden="true"><span class="skill-name">Python</span><span class="skill-type">Programming Language</span></article>
+                    <article class="skill"><span class="skill-index">03</span><img class="skill-log" src="assets/ico/html5-original.svg" alt="" aria-hidden="true"><span class="skill-name">HTML</span><span class="skill-type">Web</span></article>
+                    <article class="skill"><span class="skill-index">04</span><img class="skill-log" src="assets/ico/electron-original.svg" alt="" aria-hidden="true"><span class="skill-name">Electron</span><span class="skill-type">Desktop Apps</span></article>
+                    <article class="skill"><span class="skill-index">05</span><img class="skill-log" src="assets/ico/css3-original.svg" alt="" aria-hidden="true"><span class="skill-name">CSS</span><span class="skill-type">Web Styling</span></article>
+                    <article class="skill"><span class="skill-index">06</span><img class="skill-log" src="assets/ico/javascript-original.svg" alt="" aria-hidden="true"><span class="skill-name">JavaScript</span><span class="skill-type">Programming Language</span></article>
+                    <article class="skill"><span class="skill-index">07</span><img class="skill-log" src="assets/ico/bash-original.svg" alt="" aria-hidden="true"><span class="skill-name">Shell</span><span class="skill-type">Command Line</span></article>
+                    <article class="skill"><span class="skill-index">08</span><img class="skill-log" src="assets/ico/godot-original.svg" alt="" aria-hidden="true"><span class="skill-name">Godot</span><span class="skill-type">Game Engine</span></article>
                 </div>
             </div>
         </section>
