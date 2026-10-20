@@ -142,7 +142,7 @@
             letter-spacing: .12em;
             text-transform: uppercase;
         }
-        .live-dot {
+        .online-dot {
             width: 7px;
             aspect-ratio: 1;
             border-radius: 50%;
@@ -160,8 +160,6 @@
             word-break: break-word;
         }
         h1 span { color: var(--accent);}
-        .intro { max-width: 570px; margin:0; color: var(--muted); font-size: clamp(16px,2vw,19px); line-height: 1.65; overflow-wrap: anywhere; word-break: break-word;}
-        .intro strong {color: var(--text); font-weight: 500;}
         .hero-actions {display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px;}
         .button {
             display: inline-flex;
@@ -198,7 +196,7 @@
             text-transform: uppercase;
         }
         .card-content { padding:21px;}
-        .avatar {
+        .profile {
             position: relative;
             display: grid;
             overflow: hidden;
@@ -212,7 +210,7 @@
                 repeating-radial-gradient(90deg, transparent 0 25px, color-mix(in srgb, var(--line) 58%, transparent) 26px),
                 var(--bg);
         }
-        .avatar::before, .avatar::after {
+        .profile::before, .profile::after {
             position: absolute;
             width: 64%;
             aspect-ratio: 1;
@@ -220,8 +218,8 @@
             border-radius: 50%;
             content: "";
         }
-        .avatar::after {width: 44%; border-color: color-mix(in srgb, var(--accent) 30%, transparent);}
-        .avatar-initial {
+        .profile::after {width: 44%; border-color: color-mix(in srgb, var(--accent) 30%, transparent);}
+        .profile-initial {
             position: relative;
             z-index: 1;
             color: var(--text);
@@ -421,21 +419,21 @@
             color: var(--accent);
             font-size: 15px;
         }
-        .specialization {display:grid;
+        .certificates {display:grid;
         grid-template-columns: 1fr auto;
         align-items: center;
         }
-        .specialization:hover {
+        .certificates:hover {
             border-color: var(--accent);
         }
-        .specialization .cert-name {
+        .certificates .cert-name {
             display: block;
             margin-bottom: 6px;
         }
-        .specialization .cert-org {
+        .certificates .cert-org {
             text-align: left;
         }
-        .specialization .cert-arrow {font-size: 20px;}
+        .certificates .cert-arrow {font-size: 20px;}
         .end-card {
             display: flex;
             align-items: center;
@@ -483,7 +481,7 @@
             .hero { padding-top: 53px;}
             .hero-grid { grid-template-columns: 1fr; gap: 36px;}
             .profile-card { max-width: 420px;}
-            .avatar { aspect-ratio: 1.65;}
+            .profile { aspect-ratio: 1.65;}
             .skills-grid { grid-template-columns: repeat(2,minmax(0, 1fr));}
             .section-note { max-width: 380px;}
             .section-heading { align-items: start; flex-direction: column;}
@@ -532,25 +530,21 @@
         <section class="hero wrap" id="about" aria-labelledby="hero-title">
             <div class="hero-grid">
                 <div>
-                    <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>STUDENT DEV<span aria-hidden="true"></p>
+                    <p class="eyebrow"><span class="online-dot" aria-hidden="true"></span>STUDENT DEV<span aria-hidden="true"></p>
                     <h1 id="hero-title">Hi, I'm<br><span>Mostafa.</span></h1>
-                    <p class="intro">
-                        I'm a <strong>15 Year old Egyptian</strong> in <strong>Khobar, Saudi Arabia</strong>.
-                        I'm learning by building with code.
-                    </p>
                     <div class="hero-actions">
-                        <a class="button primary" href="#skills">Explore my Skills <span aria-hidden="true">↗</span></a>
-                        <a class="button" href="#certificates">View certificates <span aria-hidden="true">↗</span></a>
+                        <a class="button primary" href="#skills">Explore My Skills <span aria-hidden="true">↗</span></a>
+                        <a class="button" href="#certificates">View Certificates <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
                 <aside class="profile-card" aria-label="Profile Card">
                     <div class="card-top">
                         <span>PROFILE / 001</span>
-                        <span>ONLINE<span class="live-dot" aria-hidden="true" style="display:inline-block; margin-left:5px;"></span></span>
+                        <span>ONLINE<span class="online-dot" aria-hidden="true" style="display:inline-block; margin-left:5px;"></span></span>
                     </div>
                     <div class="card-content">
-                        <div class="avatar" aria-hidden="true">
-                            <span class="avatar-initial">M.</span>
+                        <div class="profile" aria-hidden="true">
+                            <span class="profile-initial">M.</span>
                             <span class="equalizer">
                                 <i style="--bar:12px;--delay:-.2s"></i>
                                 <i style="--bar:23px;--delay:-.7s"></i>
@@ -574,8 +568,8 @@
         <section class="section" id="skills" aria-labelledby="skills-title">
             <div class="wrap">
                 <div class="section-heading">
-                    <div><p class="section-kicker">01 / TOOLKIT</p><h2 id="skills-title">Things I work with</h2></div>
-                    <p class="section-note">A growing toolkit across Programming, Desktop Apps, and Game Engines.</p>
+                    <div><p class="section-kicker">01 / SKILLS</p><h2 id="skills-title">Things I work with</h2></div>
+                    <p class="section-note">Skills across Programming, Desktop Apps, and Game Engine.</p>
                 </div>
                 <div class="skills-grid">
                     <article class="skill"><span class="skill-index">01</span><img class="skill-log" src="assets/ico/rust-original.svg" alt="" aria-hidden="true"><span class="skill-name">Rust</span><span class="skill-type">Programming Language</span></article>
@@ -593,7 +587,7 @@
             <div class="wrap">
                 <div class="section-heading">
                     <div><p class="section-kicker">02 / CERTIFICATES</p><h2 id="certificates-title">Certificates.</h2></div>
-                    <div><p class="section-note">Courses completed. Select any certificate to view its verification page.</p></div>
+                    <div><p class="section-note">Courses completed.</p></div>
                 </div>
                 <div class="cert-grid">
                     <a class="cert-card" href="https://coursera.org/verify/NQAER5SBXI6R" target="_blank" rel="noopener noreferrer"><span class="cert-number">01</span><span class="cert-arrow" aria-hidden="true">↗</span><img class="cert-preview" src="assets/certificates/previews/NQAER5SBXI6R.jpg" alt="Preview of Stay Ahead of the AI Curve certificate" loading="lazy"><span class="cert-name">Stay Ahead of the AI Curve</span><span class="cert-org">COURSERA</span></a>
